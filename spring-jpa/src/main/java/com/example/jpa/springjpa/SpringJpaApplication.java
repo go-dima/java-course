@@ -1,7 +1,7 @@
 package com.example.jpa.springjpa;
 
-import com.example.jpa.springjpa.db.Person;
-import com.example.jpa.springjpa.db.PersonDao;
+import com.example.jpa.springjpa.db.entity.Person;
+import com.example.jpa.springjpa.db.repository.PersonDao;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;

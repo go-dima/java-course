@@ -1,4 +1,4 @@
-package com.example.jpa.springjpa.db;
+package com.example.jpa.springjpa.db.entity;
 
 import lombok.*;
 

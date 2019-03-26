@@ -1,5 +1,6 @@
-package com.example.jpa.springjpa.db;
+package com.example.jpa.springjpa.db.repository;
 
+import com.example.jpa.springjpa.db.entity.Person;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
