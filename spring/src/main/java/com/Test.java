@@ -7,9 +7,11 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @Configuration
 @ComponentScan("com")
+@EnableAspectJAutoProxy
 public class Test {
     public static void main(String[] args) {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(Test.class);
@@ -28,5 +30,19 @@ public class Test {
         p.setName("sss");
         System.out.println(p.toString());
         System.out.println(p);
+
+        System.out.println("\nTimestamp annotations:");
+        System.out.println("Expecting: annotation (method):");
+        pb1.getX();
+        System.out.println("-----");
+        System.out.println("Expecting: no annotation (method):");
+        pb1.setX(4);
+        System.out.println("-----");
+        System.out.println("Expecting annotation (class):");
+        sb1.getX();
+        System.out.println("-----");
+        System.out.println("Expecting annotation (class):");
+        sb1.setX(8);
+        System.out.println("-----");
     }
 }
