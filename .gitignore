@@ -25,4 +25,6 @@ hs_err_pid*
 #Ignore IntelliJ files
 .idea/*
 /*/.idea/*
-/out/*
+*/out/*
+
+*/.gradle/*
