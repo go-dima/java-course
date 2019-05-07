@@ -1,0 +1,8 @@
+spring:
+    application:
+      name: gateway-server
+    cloud:
+      config:
+        uri: http://localhost:9999
+    server:
+      port: 9090 #this is a fallback port! the port comes from a config service.
