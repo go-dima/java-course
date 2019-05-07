@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/go-dima/java-spring-course
+          searchPaths: 'cloud/configuration'
+
+server:
+  port: 9999
